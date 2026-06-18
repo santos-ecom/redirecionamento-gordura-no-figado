@@ -1,11 +1,21 @@
-﻿<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=https://forseniors.shop/pages/gordura-polones">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Redirecionando...</title>
-  <script>window.location.replace("https://forseniors.shop/pages/gordura-polones");</script>
+  <script>
+    (function() {
+      var destinoBase = "https://forseniors.shop/pages/gordura-polones";
+      var params = window.location.search;
+      if (params) {
+        var separador = destinoBase.indexOf("?") !== -1 ? "&" : "?";
+        window.location.replace(destinoBase + separador + params.substring(1));
+      } else {
+        window.location.replace(destinoBase);
+      }
+    })();
+  </script>
 </head>
-<body>
-</body>
+<body></body>
 </html>
